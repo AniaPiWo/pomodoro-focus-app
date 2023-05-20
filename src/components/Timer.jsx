@@ -1,15 +1,16 @@
 import React from "react";
 import { StyledTimer, StyledTimerBtnBox, StyledTimerBtn } from "./styles/Timer.styled";
 
-export const Timer = () => {
+export const Timer = ({currentTime, setTime, time, decreaseTimer, increaseTimer}) => {
+
 
     return (
         <>
         <StyledTimer>
-            <p>25:00</p>
+            <p>{currentTime}</p>
             <StyledTimerBtnBox>
-                <StyledTimerBtn>-</StyledTimerBtn>
-                <StyledTimerBtn>+</StyledTimerBtn>
+                <StyledTimerBtn onClick={decreaseTimer}>-</StyledTimerBtn>
+                <StyledTimerBtn onClick={increaseTimer}>+</StyledTimerBtn>
             </StyledTimerBtnBox>
         </StyledTimer>
         </>

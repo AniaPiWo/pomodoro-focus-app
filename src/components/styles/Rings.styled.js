@@ -5,5 +5,5 @@ export const StyledRings = styled.svg`
     height: 100%;
     position: absolute;
     top: 160px;
-    left: 0px
+    left: 0px;
 `
