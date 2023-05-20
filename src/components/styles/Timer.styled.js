@@ -15,6 +15,7 @@ export const StyledTimer = styled.div`
     margin-top: 170px;
     margin-bottom: 170px;
     gap: 30px;
+    z-index: 1;
 `
 
 export const StyledTimerBtnBox = styled.div`

@@ -14,4 +14,6 @@ export const StyledButton = styled.button`
     border: none;
     outline: none;
     background: #000300;
-    margin: 18px`
+    margin: 18px;
+    z-index: 1;
+    `
