@@ -1,0 +1,17 @@
+import React from "react";
+import { StyledRings } from "../styles/Rings.styled";
+
+export const Rings = () => {
+
+    return (
+        <StyledRings>
+        <svg width="420" height="393" viewBox="0 0 420 393" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.8" cx="170.686" cy="175.686" r="170.186" stroke="#FEF2E7"/>
+        <circle cx="205.082" cy="183.192" r="170.186" stroke="#FEF2E7"/>
+        <circle opacity="0.2" cx="249.314" cy="170.686" r="170.186" stroke="#FEF2E7"/>
+        <circle opacity="0.4" cx="186.521" cy="221.671" r="170.186" stroke="#FEF2E7"/>
+        <circle opacity="0.6" cx="229.314" cy="210" r="170.186" stroke="#FEF2E7"/>
+        </svg>
+        </StyledRings>
+    )
+}

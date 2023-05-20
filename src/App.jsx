@@ -1,19 +1,27 @@
-import styled from 'styled-components';
-
-const Container = styled.div`
-  width: 390px;
-  height: 100vh;
-  margin: 0 auto;
-  overflow-y: scroll;
-  background: #000300;
-`;
+import React from "react";
+import { Container } from "./components/styles/Container.styled";
+import { Header } from "./components/Header";
+import { Timer } from "./components/Timer";
+import { Button } from "./components/Button";
+import { Rings } from "./components/Icons/Rings";
 
 function App() {
+  const handleClick = () => {
+    console.log("Button clicked!");
+  };
+
   return (
     <Container>
-        App
+      <Header />
+      <Timer />
+      <Button onClick={handleClick} text="START FOCUS" />
+      <Button onClick={handleClick} text="TAKE A BREAK" />
+      -
+      <Button onClick={handleClick} text="Show logs" />
+      <Rings />
     </Container>
-  )
+  );
 }
 
-export default App
+export default App;
+
