@@ -5,12 +5,12 @@ import {
   StyledTimerBtn
 } from "./styles/Timer.styled";
 
-export const Timer = ({ currentTime, decreaseTimer, increaseTimer, isActive }) => {
+export const Timer = ({ currentTime, decreaseTimer, increaseTimer, isActive, isPaused }) => {
   return (
     <>
       <StyledTimer>
         <p>{currentTime}</p>
-        {isActive ? null : (
+        {isActive || isPaused ? null : (
           <StyledTimerBtnBox>
             <StyledTimerBtn onClick={decreaseTimer}>-</StyledTimerBtn>
             <StyledTimerBtn onClick={increaseTimer}>+</StyledTimerBtn>
