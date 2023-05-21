@@ -12,10 +12,9 @@ export const StyledTimer = styled.div`
     text-align: center;
     letter-spacing: 0.1em;
     color: #FEF2E7;
-    margin-top: 170px;
-    margin-bottom: 170px;
-    gap: 30px;
+    gap: 15px;
     z-index: 1;
+    margin-top: 30px;
 `
 
 export const StyledTimerBtnBox = styled.div`

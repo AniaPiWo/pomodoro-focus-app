@@ -6,6 +6,7 @@ export const StyledHeader = styled.header`
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    margin-top: 60px;
 
     & h2 {
         font-style: normal;
