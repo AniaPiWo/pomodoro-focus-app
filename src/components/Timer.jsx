@@ -1,18 +1,26 @@
 import React from "react";
-import { StyledTimer, StyledTimerBtnBox, StyledTimerBtn } from "./styles/Timer.styled";
+import {
+  StyledTimer,
+  StyledTimerBtnBox,
+  StyledTimerBtn
+} from "./styles/Timer.styled";
 
-export const Timer = ({currentTime, setTime, time, decreaseTimer, increaseTimer}) => {
+export const Timer = ({ currentTime, decreaseTimer, increaseTimer, isActive }) => {
+  return (
+    <>
+      <StyledTimer>
+        <p>{currentTime}</p>
+        {isActive ? null : (
+          <StyledTimerBtnBox>
+            <StyledTimerBtn onClick={decreaseTimer}>-</StyledTimerBtn>
+            <StyledTimerBtn onClick={increaseTimer}>+</StyledTimerBtn>
+          </StyledTimerBtnBox>
+        )}
+      </StyledTimer>
+    </>
+  );
+};
 
 
-    return (
-        <>
-        <StyledTimer>
-            <p>{currentTime}</p>
-            <StyledTimerBtnBox>
-                <StyledTimerBtn onClick={decreaseTimer}>-</StyledTimerBtn>
-                <StyledTimerBtn onClick={increaseTimer}>+</StyledTimerBtn>
-            </StyledTimerBtnBox>
-        </StyledTimer>
-        </>
-    )
-}
+
+
